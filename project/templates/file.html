@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 
-<head>
+{% block title %}This can be anything you want{% endblock %}
 
-    <title>This can be anything you want</title>
+{% block head_css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
 
-</head>
-
-<body>
-    <h1>Hello There!</h1>
-</body>
-
-</html>
+{% block content %}
+<h1>Hello There!</h1>
+<p>askjhdgahjgsjhdkaghjsgdhjsg</p>
+{% endblock %}
