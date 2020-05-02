@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon.png') }}">
+
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="Lowell Dev Club">
+    <meta name="description" content="Live project site.">
+
+    <!-- Facebook -->
+    <meta property="og:image" content="{{ url_for('static', filename='img/rafael_profile_square.jpeg') }}">
+    <meta property="og:description" content="Personal website to display Rafael Cenzano's work">
+    <meta property="og:title" content="Rafael Cenzano">
+    <meta property="og:site_name" content="Rafael Cenzano's Personal website">
+    <meta property="og:url" content="https://rafaelcenzano.com/">
+
+    {% block meta %}
+    {% endblock %}
+
+    {% block head_css %}
+    {% endblock %}
+
+    {% block head_js %}
+    {% endblock %}
+
+</head>
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block trailing_js %}
+    {% endblock %}
+
+</body>
+</html>
